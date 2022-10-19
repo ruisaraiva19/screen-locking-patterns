@@ -1,0 +1,15 @@
+{
+  "name": "screen-locking-patterns",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vite": "^3.1.8",
+    "vitest": "^0.24.3"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
