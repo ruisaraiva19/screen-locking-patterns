@@ -14,7 +14,7 @@ it('returns 5 when starting from 3 and the length is 2', () => {
   expect(countPatternsFrom(3, 2)).toBe(5)
 })
 
-it.only('returns 37 when starting from 4 and the length is 3', () => {
+it('returns 37 when starting from 4 and the length is 3', () => {
   expect(countPatternsFrom(4, 3)).toBe(37)
 })
 
