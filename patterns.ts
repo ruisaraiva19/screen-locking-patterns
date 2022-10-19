@@ -10,6 +10,13 @@ const possibleJumps = {
   9: [2, 4, 5, 6, 8],
 };
 
+function log(...args: any[]) {
+  if (process.env.CI) {
+    return;
+  }
+  console.log(...args);
+}
+
 export function countPatternsFrom(firstPoint: keyof typeof possibleJumps, length: number) {
   if (length < 1 || length > 9) {
     return 0;
@@ -19,24 +26,24 @@ export function countPatternsFrom(firstPoint: keyof typeof possibleJumps, length
 
   function jumpToNextPoint(previousPoints: number[]) {
     const lastPoint = previousPoints[previousPoints.length - 1];
-    console.log('last point:', lastPoint);
+    log('last point:', lastPoint);
     const nextPoints = possibleJumps[lastPoint].filter((point) => !previousPoints.includes(point));
-    console.log('next points:', nextPoints);
+    log('next points:', nextPoints);
 
     if (previousPoints.length === length) {
       patterns.push(previousPoints);
-      console.log('new pattern:', previousPoints);
+      log('new pattern:', previousPoints);
       return;
     }
 
     nextPoints.forEach((nextPoint) => {
-      console.log('\nnext point:', nextPoint);
+      log('\nnext point:', nextPoint);
       jumpToNextPoint([...previousPoints, nextPoint]);
     });
   }
   jumpToNextPoint([firstPoint]);
 
-  console.log('\npossible patterns:');
-  console.log(patterns);
+  log('\npossible patterns:');
+  log(patterns);
   return patterns.length;
 }
