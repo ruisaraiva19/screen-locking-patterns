@@ -1,5 +1,7 @@
 # Screen Locking Patterns
 
+[![Tests](https://github.com/ruisaraiva19/screen-locking-patterns/actions/workflows/tests.yml/badge.svg)](https://github.com/ruisaraiva19/screen-locking-patterns/actions/workflows/tests.yml)
+
 If you own an Android smartphone, you are familiar with the pattern you chose to lock your phone with. Every time, you pick up your phone and mechanically draw these lines on your screen, connecting the dots to form the unlock pattern. To unlock the device, you need to connect a sequence of dots/points in a grid by swiping your finger without lifting it as you trace the pattern through the screen.
 
 ![Android Screen Lock](./assets/android-pattern.png)
