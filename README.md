@@ -22,12 +22,12 @@ Bear in mind that this kata requires returning the **number** of patterns, **not
 
 1. In a pattern, the points **cannot be repeated**: they can only be used once, at
 most.
-  a. You can’t have a path as 2 → 3 → 4 → 2.
+   1. You can’t have a path as 2 → 3 → 4 → 2.
 2. In a pattern, any two subsequent points can only be connected with **direct straight lines** in either of these ways:
-  a. **Horizontally**: like (1 → 2).
-  b. **Vertically**: like (4 → 7).
-  c. **Diagonally**: like (I → E), as well as (2 → 9).
-3. **Passing over a point between them that has already been 'used' as** like 5 → 4 → 7 → 3 passing over 5 from 7 → 3. Normally, you wouldn't be able to connect 7 → 3 going through 5 but, for the context of the exercise, you can have a pattern like 5 → 4 → 7 → 3, since the path from 7 → 3 is valid and 5 has been already used in the pattern.
+   1. **Horizontally**: like (1 → 2).
+   2. **Vertically**: like (4 → 7).
+   3. **Diagonally**: like (I → E), as well as (2 → 9).
+3. **Passing over a point that has already been 'used' as** like 5 → 4 → 7 → 3 passing over 5 from 7 → 3. Normally, you wouldn't be able to connect 7 → 3 going through 5 but, for the context of the exercise, you can have a pattern like 5 → 4 → 7 → 3, since the path from 7 → 3 is valid and 5 has been already used in the pattern.
 
 ## Unit test to validate the implementation
 
